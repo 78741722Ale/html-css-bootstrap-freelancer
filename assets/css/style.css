@@ -1,26 +1,28 @@
+/* Document checking completed. No errors or warnings to show. */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header .row {
-    height: 90px;
-    background-color: #2C3E50;
+/* Altezze dei blocchi predefinite */
+.h_90 {
+  height: 90px;  
 }
-
 .h_580 {
     height: 580px;
 }
-
 .h_320 {
     height: 300px;
 }
-
 .h_490 {
     height: 490px;
 }
 
+.h_375 {
+    height: 375px;
+}
 .blue {
     background-color: #277DCD;
 }

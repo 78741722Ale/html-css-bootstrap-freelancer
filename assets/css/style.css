@@ -4,11 +4,20 @@
   box-sizing: border-box;
 }
 
-body {
-    background-color: brown;
+header .row {
+    height: 90px;
+    background-color: #2C3E50;
 }
 
-header .col-6 {
-    background-color: #2C3E50;
+.h_580 {
+    height: 580px;
+}
+
+.h_320 {
+    height: 300px;
+}
+
+.blue {
+    background-color: #277DCD;
 }
 

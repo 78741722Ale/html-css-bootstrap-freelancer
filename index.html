@@ -82,13 +82,13 @@
                 <!-- Titolo delle cards -->
                 <h1 class="pt-4 pb-1">Portfolio</h1>
                 <!-- Stella con due linee -->
-                <div class="star_2 py-sm-3 d-flex align-items-center justify-content-center">
+                <div class="star_2 py-sm-3 pb-3 d-flex align-items-center justify-content-center">
                     <hr>
                     <i class="fa-solid opacity-100 fa-star mx-3"></i>
                     <hr>
                 </div>
                 <!-- Cards -->
-                <div class="row py-2 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 gy-3 gx-3">
+                <div class="row py-2 row-cols-auto row-cols-sm-1 row-cols-md-2 row-cols-lg-3 gy-3 gx-3">
                     <!-- Cabina  -->
                     <div class="col">
                         <div class="card">
@@ -142,7 +142,7 @@
                         <hr>
                     </div>
                     <!-- Contenuto -->
-                    <div class="row justify-content-center text-lowercase pt-4 pb-3 gx-3 gy-2 row-cols-sm-1 row-cols-md-2">
+                    <div class="row row-cols-auto justify-content-center text-lowercase pt-4 pb-3 gx-3 gy-2 row-cols-sm-1 row-cols-md-2">
                         <!-- Contenuto 1 -->
                         <div class="col-sm-8 text_left col-md-5 col-lg-5">
                             <p>
@@ -185,7 +185,7 @@
                 </div>
                 <!-- Form -->
                 <div class="container">
-                    <div class="row justify-content-center pb-2 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 justify-content-start">
+                    <div class="row row-cols-auto flex-column flex-wrap justify-content-sm-center pb-2 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 justify-content-start">
                         <!-- Input Name -->
                         <div class="col col-sm-10">
                             <div class="form-floating mb-1">
@@ -215,7 +215,7 @@
                             </div>
                         </div>
                         <!-- Button Submit -->
-                        <div class="col-sm-10 pt-2">
+                        <div class="col pt-3 col-sm-10">
                             <button type="button" class="btn bg_about text-light">Send</button>
                         </div>
                     </div>
@@ -228,28 +228,27 @@
     <div class="bg_footer_top">
         <!-- Container - Footer top -->
         <div class="container text-light">
-            <div class="row justify-content-center align-content-center gy-sm-5 gx-md-2 text-sm-center row-cols-sm-1 row-cols-md-3 row-cols-lg-3 p-3">
+            <div class="row row-cols-auto justify-content-sm-center justify-content-md-center justify-content-lg-center align-content-center gy-5 gx-md-2 text-sm-center row-cols-sm-1 row-cols-md-3 row-cols-lg-3 p-3">
                 <!--  Location -->
-                <div class="col col-md-4 col-lg-4">
+                <div class="col col-sm-10 col-md-4 col-lg-4">
                     <h3 class="text-uppercase">Location</h3>
                     <span>2215 John Daniel Drive Clark, MO 54243</span>
                 </div>
                 <!--  Around the web -->
-                <div class="col col-lg-4 col-md-4">
+                <div class="col col-sm-10 col-lg-4 col-md-4">
                     <h3 class="text-uppercase">Around the web</h3>
                     <!-- Icons pack -->
                     <div class="d-flex justify-content-center">
-                        <span class="icons mx-2"><i class="abs fa-brands fa-facebook-f"></i> </span>
-                        <span class="icons mx-2"><i class="abs fa-brands fa-google-plus-g"></i> </span>
-                        <span class="icons mx-2"><i class="abs fa-brands fa-twitter"></i> </span>
-                        <span class="icons mx-2"><i class="abs fa-brands fa-linkedin-in"></i> </span>
+                        <div class="btn btn-outline-light btn_cont mx-2"><i class="abs px_mid fa-brands fa-facebook-f"></i></div>   
+                        <div class="btn btn-outline-light btn_cont mx-2"><i class="abs px_mid fa-brands fa-google-plus-g"></i></div>
+                        <div class="btn btn-outline-light btn_cont mx-2"><i class="abs px_mid fa-brands fa-twitter"></i></div>
+                        <div class="btn btn-outline-light btn_cont mx-2"><i class="abs px_mid fa-brands fa-linkedin-in"></i></div>
                     </div>
                 </div>
                 <!--  About Freelancer -->
                 <div class="col col-sm-10 col-md-4 col-lg-4">
                     <h3 class="text-uppercase">About Freelancer</h3>
-                    <p>Freelance is a free to use, open source Bootstrap theme created by <span class="text_about">Start
-                            Bootstrap.</span></p>
+                    <p>Freelance is a free to use, open source Bootstrap theme created by <span class="text_about">StartBootstrap.</span></p>
                 </div>
             </div>
         </div>
@@ -265,6 +264,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

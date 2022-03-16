@@ -10,6 +10,10 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Link al foglio di Stile-->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link a Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Start Bootstrap</title>
 </head>
 <!-- Document checking completed. No errors or warnings to show. -->
@@ -17,8 +21,8 @@
 <body>
     <!-- /#site_header -->
     <header class="bg_header" id="site_header">
-        <div class="container">
-            <div class="row row-cols-md-1">
+        <div class="container-sm container-md container-lg">
+            <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1">
                 <!-- Navbar -->
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <nav class="navbar navbar-expand-lg">
@@ -58,45 +62,76 @@
 
     <!-- /#site_main -->
     <main id="site_main">
+        <!-- Sezione completata -->
         <!-- Heroimage -->
-        <section class="bg_hero mb-3">
+        <div class="bg_hero mb-3">
             <div class="container">
-                <div class="row h_mc pt-5 pb-5 flex-wrap justify-content-center align-content-start">
-                    <!-- Hero Image -->
-                    <div class="col-sm-4 h_200 bg-dark"></div>
-                    <!-- Titolo -->
-                    <div class="col-sm-9 h_90 bg-dark"></div>
-                    <!-- Descrizione -->
-                    <div class="col-sm-7 h_90 bg-dark bg-opacity-50"></div>
-                    <!-- Titolo -->
-                    <div class="col-sm-9 h_90 bg-dark bg-opacity-50"></div>
+                <div class="row">
+                    <div class="col pb-5 text-uppercase text-white">
+                        <div class="jumbotron d-flex flex-column justify-content-center text-center mt-3">
+                            <img id="hero" src="./assets/img/avatar.svg" alt="">
+                            <h1 class="my-2">start bootstrap</h1>
+                            <!-- Stella con due linee -->
+                            <div class="star d-flex align-items-center justify-content-center">
+                                <hr>
+                                <i class="fa-solid fa-star mx-3"></i>
+                                <hr>
+                            </div>
+                            <!-- Sotto-titoli -->
+                            <span class="mt-2"> graphic artist - web designer - illustrator </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-
-
-        
-
-
-
-
-
+        </div>
         <!-- PortFolio -->
-        <div class="container mb-5">
-            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 border gy-3 gx-3">
-                <!--  -->
-                <div class="col bg-danger h_320"></div>
-                <!--  -->
-                <div class="col bg-danger h_320"></div>
-                <!--  -->
-                <div class="col bg-danger h_320"></div>
-                <!--  -->
-                <div class="col bg-danger h_320"></div>
-                <!--  -->
-                <div class="col bg-danger h_320"></div>
-                <!--  -->
-                <div class="col bg-danger h_320"></div>
+        <div class="container text-uppercase text-center bg-body mb-5">
+            <!-- Titolo delle cards -->
+            <h1 class="my-2">Portfolio</h1> 
+            <!-- Stella con due linee -->
+            <div class="star_2 d-flex align-items-center justify-content-center">
+                <hr>
+                <i class="fa-solid fa-star mx-3"></i>
+                <hr>
+            </div>
+            <!-- Cards -->
+            <div class="row py-2 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 gy-3 gx-3">
+                <!-- Cabina  -->
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/cabin.png" class="card-img" alt="Cabina">
+                    </div>
+                </div>
+                <!-- Torta -->
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/cake.png" class="card-img" alt="Torta">
+                    </div>
+                </div>
+                <!-- Circo -->
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/circus.png" class="card-img" alt="Circo">
+                    </div>
+                </div>
+                <!-- Controller -->
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/game.png" class="card-img" alt="Controller">
+                    </div>
+                </div>
+                <!-- Cassaforte -->
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/safe.png" class="card-img" alt="Cassaforte">
+                    </div>
+                </div>
+                <!-- Sottomarino -->
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/submarine.png" class="card-img" alt="Sottomarino">
+                    </div>
+                </div>
             </div>
         </div>
         <!-- About -->

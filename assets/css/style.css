@@ -8,57 +8,74 @@
 
 /* Palette Colori */
 :root {
-    --bg_header: #2C3E50;
-    --bg_hero: #1ABC9C;
+  --bg_header: #2c3e50;
+  --bg_hero: #1abc9c;
 }
 
 /* Header */
 .bg_header {
-    background-color: var(--bg_header);
+  background-color: var(--bg_header);
 }
 
 .bg_hero {
-    background-color: var(--bg_hero);
+  background-color: var(--bg_hero);
 }
 
-
 .text_white {
-    color: white;
+  color: white;
 }
 
 .text_grey {
-    color: #98A0A6;
+  color: #98a0a6;
 }
+
+/* Hero Image */
+
+#hero {
+  height: 170px;
+}
+
+.star > hr {
+  width: 15%;
+  height: 3px;
+  border: 1px solid white;
+}
+
+.star_2 > hr {
+  width: 15%;
+  height: 3px;
+  color: black;
+}
+
+hr {
+    opacity: 100%;
+}
+
+
 
 
 /* Altezze dei blocchi predefinite */
 .h_90 {
-  height: 90px;  
+  height: 90px;
 }
 
 .h_200 {
-    height: 200px;
-}
-
-.h_mc {
-    height: min-content;
+  height: 200px;
 }
 
 .h_580 {
-    height: 580px;
+  height: 580px;
 }
 .h_320 {
-    height: 300px;
+  height: 300px;
 }
 .h_490 {
-    height: 490px;
+  height: 490px;
 }
 
 .h_375 {
-    height: 375px;
+  height: 375px;
 }
 .blue {
-    background-color: #277DCD;
+  background-color: #277dcd;
 }
-
-

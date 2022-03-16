@@ -12,16 +12,46 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Start Bootstrap</title>
 </head>
-    <!-- Document checking completed. No errors or warnings to show. -->
+<!-- Document checking completed. No errors or warnings to show. -->
+
 <body>
     <!-- /#site_header -->
-    <header class="bg-danger bg-opacity-50" id="site_header">
-        <div class="container container-sm container-md container-lg">
-            <div class="row h_90 bg-success bg-opacity-75">
-                <!-- Titolo -->
-                <div class="col-sm-10 border col-md-6 col-lg-6"></div>
-                <!-- Menu laterale -->
-                <div class="col-6 col-sm-2 border col-md-6 col-lg-6"></div>
+    <header class="bg_header" id="site_header">
+        <div class="container">
+            <div class="row row-cols-md-1">
+                <!-- Navbar -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <!-- Start Bootstrap -->
+                            <a class="navbar-brand text_white text-uppercase" href="#">Start Bootstrap</a>
+                            <!-- Toggler Dropdown -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="text_grey navbar-toggler-icon"></span>
+                            </button>
+                            <!-- Main menu -->
+                            <div class="collapse navbar-collapse flex-grow-0 text-uppercase"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <!-- Portfolio -->
+                                    <li class="nav-item">
+                                        <a class="text_white nav-link active" aria-current="page" href="#">Portfolio</a>
+                                    </li>
+                                    <!-- About -->
+                                    <li class="text_white nav-item">
+                                        <a class="text_white nav-link" href="#">About</a>
+                                    </li>
+                                    <!-- Contact -->
+                                    <li class="text_white nav-item">
+                                        <a class="text_white nav-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -29,38 +59,44 @@
     <!-- /#site_main -->
     <main id="site_main">
         <!-- Heroimage -->
-        <div class="container mb-3">
-            <div class="row h_580 bg-info">
-                <div class="border col-sm-12 col-md-12 col-lg-12"></div>
+        <section class="bg_hero mb-3">
+            <div class="container">
+                <div class="row h_mc pt-5 pb-5 flex-wrap justify-content-center align-content-start">
+                    <!-- Hero Image -->
+                    <div class="col-sm-4 h_200 bg-dark"></div>
+                    <!-- Titolo -->
+                    <div class="col-sm-9 h_90 bg-dark"></div>
+                    <!-- Descrizione -->
+                    <div class="col-sm-7 h_90 bg-dark bg-opacity-50"></div>
+                    <!-- Titolo -->
+                    <div class="col-sm-9 h_90 bg-dark bg-opacity-50"></div>
+                </div>
             </div>
-        </div>
+        </section>
+
+
+
+        
+
+
+
+
+
         <!-- PortFolio -->
         <div class="container mb-5">
-            <div class="row border g-2 align-content-center justify-content-sm-center justify-content-md-center justify-content-lg-evenly">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 border gy-3 gx-3">
                 <!--  -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-danger h_320"></div>
-                </div>
+                <div class="col bg-danger h_320"></div>
                 <!--  -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-danger h_320"></div>
-                </div>
+                <div class="col bg-danger h_320"></div>
                 <!--  -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-danger h_320"></div>
-                </div>
+                <div class="col bg-danger h_320"></div>
                 <!--  -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-danger h_320"></div>
-                </div>
+                <div class="col bg-danger h_320"></div>
                 <!--  -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-danger h_320"></div>
-                </div>
+                <div class="col bg-danger h_320"></div>
                 <!--  -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-danger h_320"></div>
-                </div>
+                <div class="col bg-danger h_320"></div>
             </div>
         </div>
         <!-- About -->

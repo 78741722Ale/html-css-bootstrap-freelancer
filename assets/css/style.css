@@ -6,10 +6,44 @@
   box-sizing: border-box;
 }
 
+/* Palette Colori */
+:root {
+    --bg_header: #2C3E50;
+    --bg_hero: #1ABC9C;
+}
+
+/* Header */
+.bg_header {
+    background-color: var(--bg_header);
+}
+
+.bg_hero {
+    background-color: var(--bg_hero);
+}
+
+
+.text_white {
+    color: white;
+}
+
+.text_grey {
+    color: #98A0A6;
+}
+
+
 /* Altezze dei blocchi predefinite */
 .h_90 {
   height: 90px;  
 }
+
+.h_200 {
+    height: 200px;
+}
+
+.h_mc {
+    height: min-content;
+}
+
 .h_580 {
     height: 580px;
 }

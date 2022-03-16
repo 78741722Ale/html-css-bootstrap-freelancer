@@ -55,30 +55,38 @@
 }
 /*#endregion*/
 
-
-
-
 /* Hero Image */
 #hero {
   height: 170px;
 }
 
+
+/* Stella con linee HR */
+.star,
+.star_2 {
+    font-size: xx-large;
+}
+
+/* Linee Chiare */
 .star > hr {
-  width: 15%;
+  width: 20%;
   height: 3px;
   color: white;
 }
 
+/* Linee scure */
 .star_2 > hr {
-  width: 15%;
+  width: 20%;
   height: 3px;
   color: black;
 }
 
+/* Opacità sulle Horizontal line */
 hr {
   opacity: 100%;
 }
 
+/* Icone del Footer */
 .icons {
   position: relative;
   width: 35px;
@@ -87,6 +95,7 @@ hr {
   border: 0.5px solid lightgray;
 }
 
+/* Position Absolute */
 .abs {
   position: absolute;
   top: 50%;

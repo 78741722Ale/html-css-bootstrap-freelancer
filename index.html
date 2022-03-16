@@ -21,47 +21,40 @@
 <body>
     <!-- /#site_header -->
     <header class="bg_header" id="site_header">
-        <div class="container-sm container-md container-lg">
-            <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1">
-                <!-- Navbar -->
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid">
-                            <!-- Start Bootstrap -->
-                            <a class="navbar-brand text_white text-uppercase" href="#">Start Bootstrap</a>
-                            <!-- Toggler Dropdown -->
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="text_grey navbar-toggler-icon"></span>
-                            </button>
-                            <!-- Main menu -->
-                            <div class="collapse navbar-collapse flex-grow-0 text-uppercase"
-                                id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <!-- Portfolio -->
-                                    <li class="nav-item">
-                                        <a class="text_white nav-link active" aria-current="page" href="#">Portfolio</a>
-                                    </li>
-                                    <!-- About -->
-                                    <li class="text_white nav-item">
-                                        <a class="text_white nav-link" href="#">About</a>
-                                    </li>
-                                    <!-- Contact -->
-                                    <li class="text_white nav-item">
-                                        <a class="text_white nav-link">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
+        <nav class="navbar navbar-expand-md navbar-dark py-3">
+            <div class="container">
+                <!-- Start Bootstrap -->
+                <a class="navbar-brand text-light text-uppercase" href="#">Start Bootstrap</a>
+                <!-- Botone Hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Bottoni portfolio -->
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <!-- Portfolio -->
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-uppercase" href="#">Portfolio</a>
+                        </li>
+                        <!-- About -->
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-uppercase" href="#">About</a>
+                        </li>
+                        <!-- Contatti -->
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-uppercase" href="#" tabindex="-1"
+                                aria-disabled="true">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- /#site_main -->
-    <main id="site_main">
+    <main class="mb-5" id="site_main">
         <!-- Sezione completata -->
         <!-- Heroimage -->
         <div class="bg_hero mb-3">
@@ -93,7 +86,7 @@
                 <!-- Stella con due linee -->
                 <div class="star_2 d-flex align-items-center justify-content-center">
                     <hr>
-                    <i class="fa-solid fa-star mx-3"></i>
+                    <i class="fa-solid opacity-100 fa-star mx-3"></i>
                     <hr>
                 </div>
                 <!-- Cards -->
@@ -182,13 +175,13 @@
         </div>
         <!-- Sezione completata -->
         <!-- Contact me -->
-        <div class="bg-body">
+        <div class="bg-body p-4">
             <div class="justify-content-center align-content-center">
                 <div class="text-center">
                     <!-- Titolo -->
                     <h1 class="text-uppercase">Contact Me</h1>
                     <!-- Stella con linee -->
-                    <div class="star d-flex align-items-center justify-content-center">
+                    <div class="star_2 d-flex align-items-center justify-content-center">
                         <hr>
                         <i class="fa-solid fa-star mx-3"></i>
                         <hr>
@@ -196,9 +189,10 @@
                 </div>
                 <!-- Form -->
                 <div class="container">
-                    <div class="row pb-2 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 justify-content-start">
+                    <div
+                        class="row justify-content-center pb-2 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 justify-content-start">
                         <!-- Input Name -->
-                        <div class="col col-sm-8">
+                        <div class="col col-sm-10">
                             <div class="form-floating mb-1">
                                 <input type="email" class="form-control border_none" id="floatingInput"
                                     placeholder="name@example.com">
@@ -206,7 +200,7 @@
                             </div>
                         </div>
                         <!-- Email-address -->
-                        <div class="col col-sm-8">
+                        <div class="col col-sm-10">
                             <div class="form-floating mb-1">
                                 <input type="email" class="form-control border_none" id="floatingInput"
                                     placeholder="name@example.com">
@@ -214,7 +208,7 @@
                             </div>
                         </div>
                         <!-- Phone Number -->
-                        <div class="col col-sm-8">
+                        <div class="col col-sm-10">
                             <div class="form-floating mb-1">
                                 <input type="email" class="form-control border_none" id="floatingInput"
                                     placeholder="name@example.com">
@@ -222,7 +216,7 @@
                             </div>
                         </div>
                         <!-- Text-Area -->
-                        <div class="col col-sm-8">
+                        <div class="col col-sm-10">
                             <div class="form-floating">
                                 <textarea class="form-control border_none" placeholder="Leave a comment here"
                                     id="floatingTextarea2" style="height: 150px"></textarea>
@@ -230,30 +224,57 @@
                             </div>
                         </div>
                         <!-- Button Submit -->
-                        <div class="col-sm-3 pt-2">
+                        <div class="col-sm-10 pt-2">
                             <button type="button" class="btn bg_about text-light">Send</button>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- /#site_footer -->
-    <footer id="site_footer">
-        <!-- Container Location -->
-        <div class="container">
-            <div class="bg-success row h_375">
-                <div class="col-sm-12"></div>
+    <!-- /#site_footer - sopra -->
+    <div class="bg_footer_top">
+        <!-- Container - Footer top -->
+        <div class="container text-light">
+            <div
+                class="row justify-content-center gy-sm-5 gx-md-2 text-sm-center row-cols-sm-1 row-cols-md-3 row-cols-lg-3 p-3">
+                <!--  Location -->
+                <div class="col col-lg-4">
+                    <h3 class="text-uppercase">Location</h3>
+                    <span>2215 John Daniel Drive Clark, MO 54243</span>
+                </div>
+                <!--  Around the web -->
+                <div class="col">
+                    <h3 class="text-uppercase">Around the web</h3>
+                    <!-- Icons pack -->
+                    <div class="d-flex justify-content-center">
+                        <span class="icons mx-2"><i class="abs fa-brands fa-facebook-f"></i> </span>
+                        <span class="icons mx-2"><i class="abs fa-brands fa-google-plus-g"></i> </span>
+                        <span class="icons mx-2"><i class="abs fa-brands fa-twitter"></i> </span>
+                        <span class="icons mx-2"><i class="abs fa-brands fa-linkedin-in"></i> </span>
+                    </div>
+                </div>
+                <!--  About Freelancer -->
+                <div class="col col-sm-10">
+                    <h3 class="text-uppercase">About Freelancer</h3>
+                    <p>Freelance is a free to use, open source Bootstrap theme created by <span class="text_about">Start
+                            Bootstrap.</span></p>
+                </div>
             </div>
         </div>
-        <!-- Container Copyright -->
+    </div>
+
+    <!-- /#site_footer - sotto -->
+    <div class="bg_header">
         <div class="container">
-            <div class="bg-danger bg-opacity-50 row h_90">
-                <div class="col-sm-12"></div>
+            <div class="row p-5">
+                <div class="col text-light text-center">
+                    <span>Copyright <i class="fas fa-copyright"></i> Your Website 2019</span>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
 </body>
 
 </html>

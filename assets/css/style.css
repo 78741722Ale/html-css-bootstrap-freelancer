@@ -1,5 +1,4 @@
-/* Document checking completed. No errors or warnings to show. */
-
+/* Regola generale */
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +9,13 @@
 :root {
   --bg_header: #2c3e50;
   --bg_hero: #1abc9c;
-  --bg_about: #1ABC9C;
+  --bg_about: #1abc9c;
+  --bg_footer_top: #3a546d;
 }
 
-/* Colori di Backgound */
+/*#region Classi colori Background  */
+
+/*#region Colori di Backgound */
 .bg_header {
   background-color: var(--bg_header);
 }
@@ -23,27 +25,38 @@
 }
 
 .bg_about {
-    background-color: var(--bg_about);
+  background-color: var(--bg_about);
 }
 
+.bg_footer_top {
+  background-color: var(--bg_footer_top);
+}
 
+/*#endregion*/
+
+/*#region modifiche testo */
 .text_white {
   color: white;
 }
-
 .text_grey {
   color: #98a0a6;
 }
-
-.border_none {
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
+.text_about {
+  color: var(--bg_about);
 }
-
 .text_left {
-    text-align: left;
+  text-align: left;
 }
+/* Bordi tolti al Form */
+.border_none {
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
+/*#endregion*/
+
+
+
 
 /* Hero Image */
 #hero {
@@ -53,7 +66,7 @@
 .star > hr {
   width: 15%;
   height: 3px;
-  border: 1px solid white;
+  color: white;
 }
 
 .star_2 > hr {
@@ -63,31 +76,21 @@
 }
 
 hr {
-    opacity: 100%;
+  opacity: 100%;
 }
 
-/* Altezze dei blocchi predefinite */
-.h_90 {
-  height: 90px;
+.icons {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 0.5px solid lightgray;
 }
 
-.h_200 {
-  height: 200px;
+.abs {
+  position: absolute;
+  top: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.h_580 {
-  height: 580px;
-}
-.h_320 {
-  height: 300px;
-}
-.h_490 {
-  height: 490px;
-}
-
-.h_375 {
-  height: 375px;
-}
-.blue {
-  background-color: #277dcd;
-}
